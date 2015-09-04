@@ -10,6 +10,7 @@
             // javascript is enabled. (just to be sure)
             $('html').addClass('js');
             
+            /*
             // find any footnotes
             $('fn').each(function (index, element) {
                 // insert an active span and an invisible-by-default div
@@ -29,7 +30,7 @@
                 // insert after fn element
                 self.after(insert);
             });
-
+            
             // user interaction
             $('.fn-header, .fn-close').click(function (event) {
                 var footnote = $(this).parents('.fn-content');
@@ -46,6 +47,7 @@
                 event && event.preventDefault && event.preventDefault();
                 return false;
             });
+            */
         }
     };
 })(jQuery)
