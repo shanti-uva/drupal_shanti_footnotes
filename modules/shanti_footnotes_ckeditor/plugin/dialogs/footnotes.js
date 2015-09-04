@@ -109,7 +109,7 @@ CKEDITOR.dialog.add( 'footnotesDialog', function( editor ) {
                 config.toolbarGroups = [
                     { name: 'editing',     groups: [ 'undo', 'find', 'selection', 'spellchecker' ] },
                     { name: 'clipboard',   groups: [ 'clipboard' ] },
-                    { name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ] },
+                    { name: 'basicstyles', groups: [ 'basicstyles', 'cleanup', 'links' ] },
                 ]
                 config.allowedContent = 'br em strong; a[!href]';
                 config.enterMode = CKEDITOR.ENTER_BR;

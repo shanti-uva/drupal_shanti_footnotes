@@ -9,8 +9,9 @@ function shanti_footnotes_ckeditor_ckeditor_plugin() {
   return array(
     'footnotes' => array(
       'name' => 'footnotes',
-      'desc' => t('Plugin to add footnotes.'),
+      'desc' => t('SHANTI verson of CKEditor Footnotes.'),
       'path' => drupal_get_path('module', 'shanti_footnotes_ckeditor') . '/plugin/',
+			'default' => 't',
       'buttons' => array(
         'footnotes' => array(
           'icon' => 'icons/footnotes.png',
