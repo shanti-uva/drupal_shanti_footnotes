@@ -10,7 +10,7 @@ CKEDITOR.plugins.add( 'footnotes', {
 
     footnote_ids: [],
     requires: 'widget',
-    icons: 'footnotes',
+    icons: 'Footnotes',
 
 
     // The plugin initialization logic goes inside this method.
@@ -19,7 +19,7 @@ CKEDITOR.plugins.add( 'footnotes', {
         CKEDITOR.dtd.$editable['cite'] = 1;
 
         // Add some CSS tweaks:
-        var css = '.footnotes{background:#eee; padding:1px 15px;} .footnotes cite{font-style: normal;}';
+        var css = '.footnotes{background:#eee; padding:10px 15px;} .footnotes cite{font-style: normal;}';
         CKEDITOR.addCss(css);
         
         var $this = this;
@@ -62,7 +62,6 @@ CKEDITOR.plugins.add( 'footnotes', {
         var def = {
             header: {
                 selector: 'header > *',
-                //allowedContent: ''
                 allowedContent: 'strong em span sub sup;'
             }
         };
@@ -246,7 +245,7 @@ CKEDITOR.plugins.add( 'footnotes', {
                 marker_ref = n + '-' + data.occurrences[footnote_id];
             }
             // Replace the marker contents:
-            var marker = '<a href="#footnote' + prefix + '-' + n + '" id="footnote-marker' + prefix + '-' + marker_ref + '" rel="footnote">[' + n + ']</a>';
+            var marker = '<a href="#footnote' + prefix + '-' + n + '" id="footnote-marker' + prefix + '-' + marker_ref + '" rel="footnote">' + n + '</a>';
             jQuery(this).html(marker);
         });
 
