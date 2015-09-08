@@ -10,7 +10,7 @@ CKEDITOR.plugins.add( 'footnotes', {
 
     footnote_ids: [],
     requires: 'widget',
-    icons: 'Footnotes',
+    icons: 'footnotes',
 
 
     // The plugin initialization logic goes inside this method.
