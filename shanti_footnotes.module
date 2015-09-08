@@ -1,15 +1,7 @@
 <?php
 
-/**
- * implement hook_init()
- */
 function shanti_footnotes_init() {
-  // path to self;
   $path = drupal_get_path('module', 'shanti_footnotes');
-
-  // add js
   drupal_add_js($path . '/js/shanti_footnotes.js');
-  
-  // add css
   drupal_add_css($path . '/css/shanti_footnotes.css');
 }

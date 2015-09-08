@@ -11,7 +11,7 @@ CKEDITOR.dialog.add( 'footnotesDialog', function( editor ) {
     return {
         editor_name: false,
         // Basic properties of the dialog window: title, minimum size.
-        title: 'Manage Footnotes',
+        title: 'Create Footnote',
         minWidth: 400,
         minHeight: 200,
         footnotes_el: false,
@@ -30,9 +30,11 @@ CKEDITOR.dialog.add( 'footnotesDialog', function( editor ) {
                         type: 'textarea',
                         id: 'new_footnote',
                         'class': 'footnote_text',
-                        label: 'New footnote:',
-                        inputStyle: 'height: 100px',
-                    },
+                        //label: 'New footnote:',
+                        inputStyle: 'height: 300px',
+                    }
+                    /*
+                    ,
                     {
                         // Text input field for the footnotes title (explanation).
                         type: 'text',
@@ -78,6 +80,7 @@ CKEDITOR.dialog.add( 'footnotesDialog', function( editor ) {
                             }
                         }
                     }
+                    */
                 ]
             },
         ],
