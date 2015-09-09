@@ -33,14 +33,14 @@ CKEDITOR.dialog.add( 'footnotesDialog', function( editor ) {
                         //label: 'New footnote:',
                         inputStyle: 'height: 300px',
                     }
-                    /*
+////////////////////////////////////////////////////////////////////////////////
                     ,
                     {
                         // Text input field for the footnotes title (explanation).
                         type: 'text',
                         id: 'footnote_id',
                         name: 'footnote_id',
-                        label: 'No existing footnotes',
+                        //label: 'No existing footnotes',
 
 
                         // Called by the main setupContent call on dialog initialization.
@@ -55,7 +55,8 @@ CKEDITOR.dialog.add( 'footnotesDialog', function( editor ) {
                             $footnotes = jQuery('#' + editor.id + '_contents iframe').contents().find('.footnotes ol');
                             $this = this;
 
-                            if ($footnotes.length > 0) {
+                            //if ($footnotes.length > 0) {
+                            if (0) {
                                 if ($el.find('p').length == 0) {
                                     $el.append('<p style="margin-bottom: 10px;"><strong>OR:</strong> Choose footnote:</p><ol></ol>');
                                 } else {
@@ -80,7 +81,7 @@ CKEDITOR.dialog.add( 'footnotesDialog', function( editor ) {
                             }
                         }
                     }
-                    */
+////////////////////////////////////////////////////////////////////////////////
                 ]
             },
         ],
