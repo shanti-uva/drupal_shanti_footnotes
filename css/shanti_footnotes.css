@@ -28,5 +28,10 @@
   background-color: #EEE;
   padding-left: .5em;
   padding-right: .5em;	
-  font-size: 90%;
+  font-size: 80%;
+}
+
+#shanti-texts-body section.footnotes cite {
+	font-size: 90%;
+	font-style: normal;
 }
